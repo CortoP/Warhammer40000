@@ -6,15 +6,22 @@
 </head>
 <body>
 	 <?php
+	 session_start();
 	 require_once('class/board.class.php');
-$board = new Board();
-?>
+	 $board = new Board();
+	 if (isset($_GET['width']) && isset($_GET['height']))
+	 	 $board->place_ship($_GET['width'], $_GET['height']);
+	 ?>
 <div id="header">
 	 <h1>WARHAMMER<h1>
-<>
+</div>
 <div id="board">
+<?php
 	$board->printBoard();
-<div id="select">
+
+
+
+?>
 </div>
 </body>
 </html>
