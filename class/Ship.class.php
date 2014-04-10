@@ -9,7 +9,6 @@ abstract class Ship
 	protected $_shield;
 	protected $_weapons;
 	protected $_position;
-}
 
 	function am_i_alive()
 	{
@@ -30,13 +29,96 @@ abstract class Ship
 		return $this->_name;
 	}
 
+	function getPV()
+	{
+		return $this->_PV;
+	}
+
+	function getSpan()
+	{
+		return $this->_span;
+	}
+
+	function getPP()
+	{
+		return $this->_PP;
+	}
+
+	function getSpeed()
+	{
+		return $this->_speed;
+	}
+
+	function getShield()
+	{
+		return $this->_shield;
+	}
+
+	function getWeapons()
+	{
+		return $this->_weapons;
+	}
+
 	function getPosition()
 	{
 		return $this->position;
 	}
 
+	function setName($name)
+	{
+		$this->_name = $name;
+	}
+
+	function setPV($PV)
+	{
+		$this->_PV = $PV;
+	}
+
+	function setSpan($span)
+	{
+		$this->_span = $span;
+	}
+
+	function setPP($PP)
+	{
+		$this->_PP = $PP;
+	}
+
+	function setSpeed($speed)
+	{
+		$this->_speed = $speed;
+	}
+
+	function setShield($shield)
+	{
+		$this->_shield = $shield;
+	}
+
+	function setWeapons($weapons)
+	{
+		$this->_weapons = $weapons;
+	}
+
 	function setPosition(array $coord)
 	{
-		$this->_position = array($coord['x'], $coord['y']);
+		$this->_position = array('x' => $coord['x'], 'y' => $coord['y']);
 	}
+
+	function subPP($PP)
+	{
+		$this->_PP -= $PP;
+	}
+
+	function addShield($PP)
+	{
+		$this->_shield += $PP;
+	}
+
+	function subShield($PP)
+	{
+		$this->_shield -= $PP;
+	}
+
+}
+
 ?>
