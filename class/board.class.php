@@ -106,10 +106,10 @@ class Board
 	function printBoard($phase, array $token)
 	{
 		echo "<table id=\"board\">";
-		for ($i=0;$i<100;$i++)
+		for ($i = 0 ; $i < 100 ; $i++)
 		{
 			echo "<tr>";
-			for ($j=0 ; $j<150 ; $j++)
+			for ($j = 0 ; $j < 150 ; $j++)
 			{
 
 				if ($phase == self::PLACE)
