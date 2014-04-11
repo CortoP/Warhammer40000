@@ -61,7 +61,7 @@ abstract class Ship
 
 	function getPosition()
 	{
-		return $this->position;
+		return $this->_position;
 	}
 
 	function setName($name)

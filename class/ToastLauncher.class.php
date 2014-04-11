@@ -17,7 +17,7 @@ class ToastLauncher extends Weapon
 
 	function activeWeapon()
 	{
-		$this->setLoads(self::$_initLoads);		
+		$this->setLoads(self::$_initLoads);
 	}
 }
 
