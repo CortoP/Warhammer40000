@@ -1,6 +1,6 @@
 <?PHP
 
-require_once('Weapon.class.php');
+require_once(__DIR__.'/Weapon.class.php');
 
 class ToastLauncher extends Weapon
 {

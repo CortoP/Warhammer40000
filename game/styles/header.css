@@ -1,0 +1,14 @@
+#header
+{
+	margin:0;
+	padding:0;
+	background-color:black;
+}
+#header h1
+{
+	text-align:center;
+}
+#header form
+{
+display:inline-block;
+}

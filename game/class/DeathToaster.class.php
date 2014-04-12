@@ -1,7 +1,7 @@
 <?php
 
-require_once('Ship.class.php');
-require_once('ToastLauncher.class.php');
+require_once(__DIR__.'/Ship.class.php');
+require_once(__DIR__.'/ToastLauncher.class.php');
 
 class DeathToaster extends Ship
 {

@@ -1,5 +1,5 @@
 <?php
-require_once('Ship.class.php');
+require_once(__DIR__.'/Ship.class.php');
 
 class Board
 {
